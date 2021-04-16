@@ -10,9 +10,9 @@ const questions = [
     },
     {
         type: 'list',
-        message: 'What is your preferred method of communication?',
+        message: 'What license did you use?',
         name: 'license',
-        choices: ['MIT', 'Apache'],
+        choices: ['MIT', 'Apache', 'None'],
     },
     {
         type: 'input',
@@ -61,12 +61,12 @@ function init() {
     inquirer
         .prompt(questions)
         .then((data) => {
-            console.log(data);
             const filename = 'README.md';
-            const fileData = 
-`# ${data.title} 
+            let licenseBadge = () =>  (data.license === 'None' ? '' :  `![license](https://img.shields.io/badge/license-${data.license}-green)`);
+            const fileData =
+                `# ${data.title} 
 
-![license](https://img.shields.io/badge/license-${data.license}-green)
+${licenseBadge()}
 
 
 ## Description
@@ -77,7 +77,6 @@ function init() {
 ## Table of contents
 1.[Installation](#installation)<br>
 2.[Usage](#usage)<br>
-3.[License](#license)<br>
 4.[Contributing](#contributing)<br>
 5.[Tests](#tests)<br>
 6.[Questions](#questions)<br>
@@ -92,6 +91,7 @@ function init() {
 <a name="usage"></a>
 ## Usage
     ${data.usage} 
+
 
 
 
@@ -111,8 +111,8 @@ function init() {
 
 <a name="questions"></a>
 ## Questions 
-    If you have any questions, you can reach me below at these links.
-[Email](${data.email}) <br>
+    If you have any questions, you can reach at these links below.
+[Email](mailto:${data.email}) <br>
 [GitHub](https://github.com/${data.github})
     
 
