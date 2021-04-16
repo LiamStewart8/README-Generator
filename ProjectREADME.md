@@ -1,56 +1,53 @@
-## README Generator
+# t 
 
-## Application-Picture
-![image](./assets/samplephoto.png)
+![license](https://img.shields.io/badge/license-MIT-green)
 
-## Technologies Used
-    - Javascript - Used to make write the functions of the application
-    - Git - Version control system to track changes to source code.
-    - GitHub - Hosts repositroy that can be deployed to GitHub pages.
+
+## Description
+    t
 
 
 
-## Summary
-    Built an application that will capture user input through the console and dynamically create a README.md file from the captured information.
+## Table of contents
+1.[Installation](#installation)<br>
+2.[Usage](#usage)<br>
+4.[Contributing](#contributing)<br>
+5.[Tests](#tests)<br>
+6.[Questions](#questions)<br>
 
 
-## Code Snippet
-    Below will be a very small snippit from the function that will dynamically create the Readme.md. The const fileData at the end is the contents of the generated file.
-``` function init() {
-    inquirer
-        .prompt(questions)
-        .then((data) => {
-            const filename = 'README.md';
-            let licenseBadge = () =>  (data.license === 'None' ? '' :  `![license](https://img.shields.io/badge/license-${data.license}-green)`);
-            const fileData =
-```
+<a name="installation"></a>
+##  Installation
+    t 
 
 
 
+<a name="usage"></a>
+## Usage
+    t 
 
 
 
 
 
+<a name="contributing"></a>
+## Contributing
+    t 
 
 
 
 
+<a name="tests"></a>
+## Tests
+    t 
 
 
 
+<a name="questions"></a>
+## Questions 
+    If you have any questions, you can reach at these links below.
+[Email](mailto:t) <br>
+[GitHub](https://github.com/t)
+    
 
 
-
-
-
-
-
-
-
-
-
-## Author Links
-[LinkedIn](https://www.linkedin.com/in/liamsctewart/)<br>
-[Github](https://github.com/LiamStewart8)<br>
-[Application Video](https://www.dropbox.com/s/a7xmxowiuc2ixto/Demonstration.mp4?dl=0)

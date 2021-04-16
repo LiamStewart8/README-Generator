@@ -61,7 +61,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((data) => {
-            const filename = 'README.md';
+            const filename = 'ProjectREADME.md';
             let licenseBadge = () =>  (data.license === 'None' ? '' :  `![license](https://img.shields.io/badge/license-${data.license}-green)`);
             const fileData =
                 `# ${data.title} 
