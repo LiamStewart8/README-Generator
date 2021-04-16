@@ -29,7 +29,27 @@ const questions = [
         type: 'input',
         message: 'Provide instructions for use.',
         name: 'usage',
-    }
+    },
+    {
+        type: 'input',
+        message: 'Write some guidelines for other developers that would like to contribute',
+        name: 'contributing',
+    },
+    {
+        type: 'input',
+        message: 'Provide examples on how to run your tests.',
+        name: 'tests',
+    },
+    {
+        type: 'input',
+        message: 'Enter Github username',
+        name: 'github',
+    },
+    {
+        type: 'input',
+        message: 'Enter your email',
+        name: 'email',
+    },
 
 ]
 
@@ -48,21 +68,53 @@ function init() {
 
 ![license](https://img.shields.io/badge/license-${data.license}-green)
 
-## ${data.description}
+
+## Description
+    ${data.description}
+
+
+
+## Table of contents
+1.[Installation](#installation)<br>
+2.[Usage](#usage)<br>
+3.[License](#license)<br>
+4.[Contributing](#contributing)<br>
+5.[Tests](#tests)<br>
+6.[Questions](#questions)<br>
+
+
+<a name="installation"></a>
+##  Installation
+    ${data.installation} 
+
+
+
+<a name="usage"></a>
+## Usage
+    ${data.usage} 
 
 
 
 
-
-
-## ${installation}
-
-
-
+<a name="contributing"></a>
+## Contributing
+    ${data.contributing} 
 
 
 
 
+<a name="tests"></a>
+## Tests
+    ${data.tests} 
+
+
+
+<a name="questions"></a>
+## Questions 
+    If you have any questions, you can reach me below at these links.
+[Email](${data.email}) <br>
+[GitHub](https://github.com/${data.github})
+    
 
 
 `
